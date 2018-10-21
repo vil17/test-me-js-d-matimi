@@ -1,0 +1,38 @@
+{
+  "name": "greeting-verkefni",
+  "version": "1.0.0",
+  "description": "test",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest",
+    "watch": "jest --watchAll",
+    "clean": "rm -rf node_modules",
+    "start": "node app.js",
+    "build": "webpack"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vil17/test-me-js-d-matimi/issues"
+  },
+  "homepage": "https://github.com/vil17/test-me-js-d-matimi#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "lodash": "^4.17.11"
+  },
+  "devDependencies": {
+    "clean-webpack-plugin": "^0.1.19",
+    "html-webpack-plugin": "^3.2.0",
+    "install": "^0.12.2",
+    "jest": "^23.6.0",
+    "npm": "^6.4.1",
+    "supertest": "^3.3.0",
+    "webpack": "^4.21.0",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.9"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vil17/test-me-js-d-matimi.git"
+  }
+}
