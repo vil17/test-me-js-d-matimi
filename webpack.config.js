@@ -1,21 +1,26 @@
 const path = require('path');
-//const webpack = require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin')
 
-console.log('asd');
+
+//ttt test
+// tharf npm install --save-dev mini-css-extract-plugin !!
+//const ExtractTextPlugin = require("extract-text-webpack-plugin");
+//const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+
 
 let pathsToClean = []
 module.exports = {
-	entry: './src/client/index.js',
-
+	entry: { main: './src/client/index.js',
+	ttt: './src/client/TTT.js'
+	},
 	output: {
-		filename: 'main.js',
+		filename: '[name].js', // á ekki að breyta neinu að það sé name hérna nema þegar ég er með multiple files kemur error ef ég defina bara eitt nafn
 		path: path.resolve(__dirname, 'dist')
 	},
 	plugins: [
-	new HtmlWebpackPlugin({title: 'Greeting page', inject: true}),
-	new CleanWebpackPlugin(pathsToClean),
+	new HtmlWebpackPlugin({template: 'src/client/TTT.html'}),
+	//new CleanWebpackPlugin(pathsToClean),
 	],
 	devServer: {
 		port: 3000,
@@ -24,5 +29,13 @@ module.exports = {
 		"/api": "http://localhost:8080"
 		}
 	},
+	module: {
+    rules: [
+      {
+        test: /\.css$/,
+        use: [ 'style-loader', 'css-loader' ]
+      }
+    ]
+  	}
 }
 

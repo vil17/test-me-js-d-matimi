@@ -1,10 +1,4 @@
-function component() {
-  let element = document.createElement('div');
+//const TTT = require('./TTT');
+//const _ = require('lodash'); //VIRKAR BARA HER!!!!
 
-  // Lodash, currently included via a script, is required for this line to work
-  element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-
-  return element;
-}
-
-document.body.appendChild(component());
+import css from './styles.css'; //TTT test
