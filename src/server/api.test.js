@@ -8,6 +8,6 @@ expect(res.status).toBe(200);
 });
 it("should return the greeting in a object", async () => {
 const res = await request(api).get("/greeting/Diana");
-expect(res.body.greeting).toBe("Hello, Diana!");
+expect(res.body.greeting).toBe("Hello, Diana you handsome devil");
 });
 });
