@@ -23,7 +23,7 @@ module.exports = {
 	plugins: [
 	new HtmlWebpackPlugin({template: 'src/client/TTT.html', inject: 'body', /*hash: true,*/}),
 	//new CleanWebpackPlugin(pathsToClean),
-/*	new HtmlWebpackExternalsPlugin({
+	new HtmlWebpackExternalsPlugin({
   externals: [
     {
       module: 'jquery',
@@ -38,7 +38,7 @@ module.exports = {
     },
   ],
 })
-	,*/
+	,
 	// þetta þarf að vera til að virka a dev-server amk - virðist vera nog fyrir það
 	new webpack.ProvidePlugin({ 
       $: 'jquery',

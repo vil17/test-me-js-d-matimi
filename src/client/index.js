@@ -8,7 +8,7 @@ import css from './styles.css'; //TTT test
 //import $ from 'jquery';
 //global.$ = global.jQuery = $;
 
-
+$("p").append("Some appended text.");
 //virkar eitt og ser i dev
 //import 'expose-loader?$!jquery';
 //import 'expose-loader?jQuery!jquery';
