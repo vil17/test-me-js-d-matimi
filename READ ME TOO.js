@@ -16,6 +16,10 @@ npm install exports-loader --save - til að louda external (jquery t.d.)
 en........ jquery er ekki ad virka
 
 
+set inn npm install nodemon -g til ad vera ekki alltaf ad stoppa og starta
+npm install url-loader --save-dev
+npm install expose-loader --save-dev fyrir eitthvad JS dot?
+
 ================== css og lodash ======================
 setti file.js
 import css from 'file.css';

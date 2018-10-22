@@ -23,25 +23,20 @@ module.exports = {
 	plugins: [
 	new HtmlWebpackPlugin({template: 'src/client/TTT.html', inject: 'body', hash: true,}),
 	//new CleanWebpackPlugin(pathsToClean),
-	new webpack.ProvidePlugin({
-      // the following will include default version instead of slim and umd
-      // '$': 'jquery',
-      // 'jQuery': 'jquery',
-      // 'Popper': 'popper.js'
-      
-      // for bs4 beta1 
-      // '$': 'jquery/dist/jquery.slim.js',
-      // 'jQuery': 'jquery/dist/jquery.slim.js',
-      // 'Popper': 'popper.js/dist/umd/popper'
 
-      // for bs4 beta3
+	//virkar ekki en hef thad her
+	new webpack.ProvidePlugin({ 
       '$': 'jquery',
-      jQuery: 'jquery',
-      // Popper: 'popper.js',      
+      jQuery: 'jquery',    
       Popper: ['popper.js', 'default'],
       'Util': "exports-loader?Util!bootstrap/js/dist/util"
     }),
 	],
+
+	externals: {
+    'jquery': 'jQuery'
+	},
+
 
 	devServer: { /// server dót
 		port: 3000,
@@ -50,13 +45,31 @@ module.exports = {
 		"/api": "http://localhost:8080"
 		}
 	},
+
+
 	module: { ///css dót
     rules: [
       {
         test: /\.css$/,
+        
         use: [ 'style-loader', 'css-loader' ]
       }
     ]
-  	}
+  	},
+
+
+  	module: {
+ 	rules: [{
+    test: require.resolve('jquery'), 
+    use: [{
+      loader: 'expose-loader',
+      options: 'jQuery'
+    },
+    {
+      loader: 'expose-loader',
+      options: '$'
+    }]
+  }]
+}
 }
 

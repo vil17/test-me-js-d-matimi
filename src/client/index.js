@@ -3,3 +3,6 @@
 
 import css from './styles.css'; //TTT test
 import 'bootstrap';
+//import $ from "jquery"; //virkar ekki hen hef thad her
+//var $ = require('jquery');
+//import * as $ from 'jquery'
