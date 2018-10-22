@@ -2,7 +2,14 @@
 //const _ = require('lodash'); //VIRKAR BARA HER!!!!
 
 import css from './styles.css'; //TTT test
-import 'bootstrap';
-//import $ from "jquery"; //virkar ekki hen hef thad her
-//var $ = require('jquery');
-//import * as $ from 'jquery'
+//import 'bootstrap';
+
+//virkar eitt og sjer i dev
+//import $ from 'jquery';
+//global.$ = global.jQuery = $;
+
+
+//virkar eitt og ser i dev
+//import 'expose-loader?$!jquery';
+//import 'expose-loader?jQuery!jquery';
+
