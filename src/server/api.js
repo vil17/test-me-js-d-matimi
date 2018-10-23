@@ -6,7 +6,7 @@ const path = require('path');
 
 app.use(express.static(path.resolve('dist'))); //leyfir manni að hafa js skrána í dist skránni og þurfa ekki að senda JS scripturnar sérstaklega með (sjá drasl hérna niðri)
 
-app.get('/', function (req, res) {
+//app.get('/', function (req, res) {
   res.sendFile('index.html');
 })
  //ef etta er runnar js 2x nuna
