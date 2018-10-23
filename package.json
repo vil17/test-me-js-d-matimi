@@ -18,26 +18,21 @@
   "homepage": "https://github.com/vil17/test-me-js-d-matimi#readme",
   "dependencies": {
     "bootstrap": "^4.1.3",
-    "exports-loader": "^0.7.0",
     "express": "^4.16.4",
     "jquery": "^3.3.1",
-    "jsdom": "^12.2.0",
     "lodash": "^4.17.11",
     "popper.js": "^1.14.4"
   },
   "devDependencies": {
     "clean-webpack-plugin": "^0.1.19",
     "css-loader": "^1.0.0",
-    "expose-loader": "^0.7.5",
-    "html-webpack-externals-plugin": "^3.8.0",
     "html-webpack-plugin": "^3.2.0",
     "install": "^0.12.2",
     "jest": "^23.6.0",
     "npm": "^6.4.1",
     "style-loader": "^0.23.1",
     "supertest": "^3.3.0",
-    "url-loader": "^1.1.2",
-    "webpack": "^4.21.0",
+    "webpack": "^4.22.0",
     "webpack-cli": "^3.1.2",
     "webpack-dev-server": "^3.1.9"
   },

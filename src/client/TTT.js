@@ -1,5 +1,6 @@
-$(document).ready(function () {
 
+$(document).ready(function () {
+    
     var inputSign = $('.empty'); /*einungis .empty eru klikkable, þessvegna nota ég empty classann en ekki box*/
     var playerTurn = true; /*true er player 1 eða X í þessu tilfelli*/
     var playerTurnText = $('.player-turn-text'); /*texti yfir borði*/
